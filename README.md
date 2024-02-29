@@ -38,7 +38,7 @@ O projeto está estruturado da seguinte forma:
 5. Envie um pull request.
 
 
-Este projeto foi desenvolvido por José Luis Jr como parte do desafio AluraDEV.
+Este projeto foi desenvolvido por [José Luis Jr](www.linkedin.com/in/josé-luís-da-silva-junior-5b0860182) como parte do desafio AluraDEV.
 
 ## Licença
 
