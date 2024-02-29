@@ -1,0 +1,115 @@
+/* Define as configurações básicas para a sintaxe destacada */
+
+.hljs {
+  color: #43474e; /* Cor do texto */
+  background: #f5f0e7; /* Cor de fundo */
+}
+
+.hljs::selection,
+.hljs ::selection {
+  background-color: #d8d4cb; /* Cor de fundo da seleção */
+  color: #43474e; /* Cor do texto selecionado */
+}
+
+/* Comentários, invisíveis e destaques de linha */
+.hljs-comment {
+  color: #73777f; /* Cor dos comentários */
+}
+
+/* Tags */
+.hljs-tag {
+  color: #5a5f66; /* Cor das tags */
+}
+
+/* Pontuação, operadores */
+.hljs-subst,
+.hljs-punctuation,
+.hljs-operator {
+  color: #43474e; /* Cor da pontuação e dos operadores */
+}
+
+.hljs-operator {
+  opacity: 0.7; /* Opacidade dos operadores */
+}
+
+/* Variáveis, tags XML, texto de link de marcação, listas de marcação, exclusão de diferenças */
+.hljs-bullet,
+.hljs-variable,
+.hljs-template-variable,
+.hljs-selector-tag,
+.hljs-name,
+.hljs-deletion {
+  color: #d02023; /* Cor das variáveis e das exclusões de diferenças */
+}
+
+/* Inteiros, booleanos, constantes, atributos XML, URL de link de marcação */
+.hljs-symbol,
+.hljs-number,
+.hljs-link,
+.hljs-attr,
+.hljs-variable.constant_,
+.hljs-literal {
+  color: #bf3e05; /* Cor dos símbolos, números, links e constantes */
+}
+
+/* Classes, negrito de marcação, fundo de texto de pesquisa */
+.hljs-title,
+.hljs-class .hljs-title,
+.hljs-title.class_ {
+  color: #9d6f00; /* Cor dos títulos e classes */
+}
+
+.hljs-strong {
+  font-weight: bold; /* Texto em negrito */
+  color: #9d6f00; /* Cor do texto em negrito */
+}
+
+/* Strings, classes herdadas, código de marcação, inserção de diferenças */
+.hljs-code,
+.hljs-addition,
+.hljs-title.class_.inherited__,
+.hljs-string {
+  color: #637200; /* Cor das strings e adições de diferenças */
+}
+
+/* Suporte, expressões regulares, caracteres de escape, aspas de marcação */
+.hljs-built_in,
+.hljs-doctag,
+.hljs-quote,
+.hljs-keyword.hljs-atrule,
+.hljs-regexp {
+  color: #007a72; /* Cor do suporte, expressões regulares e palavras-chave */
+}
+
+/* Funções, métodos, IDs de atributos, títulos */
+.hljs-function .hljs-title,
+.hljs-attribute,
+.ruby .hljs-property,
+.hljs-title.function_,
+.hljs-section {
+  color: #0073b5; /* Cor das funções, métodos e títulos */
+}
+
+/* Palavras-chave, armazenamento, seletores, itálico de marcação, diferenças alteradas */
+.hljs-type,
+.hljs-template-tag,
+.diff .hljs-meta,
+.hljs-keyword {
+  color: #4e66b6; /* Cor das palavras-chave, tipos e diferenciadores */
+}
+
+.hljs-emphasis {
+  color: #4e66b6; /* Cor do texto em ênfase */
+  font-style: italic; /* Texto em itálico */
+}
+
+/* Obsoleto, tags de linguagem embutida */
+.hljs-meta,
+.hljs-meta .hljs-keyword,
+.hljs-meta .hljs-string {
+  color: #c42775; /* Cor de metadados, palavras-chave e strings de metadados */
+}
+
+.hljs-meta .hljs-keyword {
+  font-weight: bold; /* Texto em negrito */
+}

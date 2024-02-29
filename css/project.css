@@ -1,0 +1,130 @@
+/* Define o estilo do container do projeto */
+.project {
+  background-color: var(--azul-escuro); /* Define a cor de fundo do container do projeto */
+}
+
+/* Define o estilo do menu do projeto */
+.project__menu {
+  width: 100%; /* Define a largura do menu do projeto como 100% */
+  padding-top: 2.5rem; /* Adiciona preenchimento superior ao menu do projeto */
+}
+
+/* Define o estilo da etiqueta do projeto */
+.project__label {
+  display: inline; /* Define a exibição da etiqueta como inline */
+  font-size: 0.75rem; /* Define o tamanho da fonte */
+  font-weight: normal; /* Define o peso da fonte como normal */
+  line-height: 18px; /* Define a altura da linha */
+  letter-spacing: 0.4em; /* Define o espaçamento entre letras */
+  text-transform: uppercase; /* Transforma o texto em maiúsculas */
+  color: white; /* Define a cor do texto */
+}
+
+/* Define o estilo do nome e da linguagem do projeto */
+.project__name,
+.project__language {
+  width: 100%; /* Define a largura como 100% */
+  height: 56px; /* Define a altura */
+  box-sizing: border-box; /* Define a caixa de modelagem incluindo bordas */
+  margin-top: 1rem; /* Define a margem superior */
+  outline: none; /* Remove a borda do contorno ao focar */
+}
+
+/* Define o estilo de hover para o nome, informações e linguagem do projeto */
+.project__name:hover,
+.project__info:hover,
+.project__language:hover {
+  background: rgba(255, 255, 255, 0.24); /* Adiciona um fundo translúcido ao passar o mouse */
+  transition: 0.3s; /* Adiciona uma transição suave */
+}
+
+/* Define o estilo para a área de texto */
+textarea {
+  width: 100%; /* Define a largura como 100% */
+  height: fit-content; /* Ajusta a altura conforme o conteúdo */
+  margin-top: 1rem; /* Define a margem superior */
+  box-sizing: border-box; /* Define a caixa de modelagem incluindo bordas */
+  font-family: 'Inter', sans-serif; /* Define a família da fonte */
+  font-size: 1rem; /* Define o tamanho da fonte */
+  line-height: 24px; /* Define a altura da linha */
+  resize: none; /* Impede a redimensionamento da área de texto */
+  outline: none; /* Remove a borda do contorno ao focar */
+}
+
+/* Define o estilo para o placeholder e a linguagem do projeto */
+::placeholder,
+.project__language {
+  font-family: 'Inter', sans-serif; /* Define a família da fonte */
+  font-size: 1rem; /* Define o tamanho da fonte */
+  line-height: 24px; /* Define a altura da linha */
+  color: rgba(255, 255, 255, 0.64); /* Define a cor do texto */
+}
+
+/* Define o estilo para a cor do projeto */
+.project__color {
+  width: 100%; /* Define a largura como 100% */
+  height: 3.5rem; /* Define a altura */
+  margin-top: 1rem; /* Define a margem superior */
+  background: none; /* Remove o fundo */
+  border: 1px solid white; /* Adiciona uma borda sólida branca */
+  border-radius: 8px; /* Adiciona bordas arredondadas */
+  cursor: pointer; /* Altera o cursor para ponteiro */
+}
+
+/* Define o estilo para o seletor de cor */
+input[type='color']::-webkit-color-swatch {
+  border: none; /* Remove a borda */
+  border-radius: 4px; /* Adiciona bordas arredondadas */
+}
+
+/* Define o estilo para o botão do projeto */
+.project__button {
+  width: 100%; /* Define a largura como 100% */
+  margin-top: 2rem; /* Define a margem superior */
+  margin-right: auto; /* Define a margem direita automática */
+  margin-left: auto; /* Define a margem esquerda automática */
+  background: var(--azul-claro); /* Define o fundo */
+  color: var(--azul-escuro); /* Define a cor do texto */
+  font-size: 1rem; /* Define o tamanho da fonte */
+  font-weight: normal; /* Define o peso da fonte como normal */
+  line-height: 24px; /* Define a altura da linha */
+}
+
+/* Define o estilo de hover para o botão do projeto */
+.project__button:hover {
+  background: #7ba4fc; /* Altera o fundo ao passar o mouse */
+  transition: 0.3s; /* Adiciona uma transição suave */
+}
+
+/* Define o estilo de clique para o botão do projeto */
+.project__button:active {
+  background: #7ba4fc; /* Altera o fundo ao clicar */
+  border: 4px solid rgba(80, 129, 251, 0.72); /* Adiciona uma borda ao clicar */
+}
+
+/* Media queries para telas de tamanho médio */
+@media screen and (min-width: 768px) {
+  .project__menu div {
+    margin-top: 0; /* Remove a margem superior */
+    display: flex; /* Define o layout flexível */
+    align-items: center; /* Alinha os itens verticalmente */
+    gap: 1rem; /* Define o espaço entre os itens */
+  }
+}
+
+/* Media queries para telas grandes */
+@media screen and (min-width: 1440px) {
+  .project__menu div {
+    display: grid; /* Define o layout de grid */
+    gap: 0; /* Define o espaço entre as grades */
+  }
+  .project__menu,
+  .project_language {
+    width: 17rem; /* Define a largura */
+    padding-top: 0; /* Remove o preenchimento superior */
+    position: relative; /* Define a posição */
+  }
+  textarea {
+    margin-bottom: 40px; /* Define a margem inferior */
+  }
+}

@@ -1,0 +1,184 @@
+/* Define o estilo do cabeçalho da página */
+.header {
+  background: var(--azul-escuro); /* Cor de fundo */
+  width: 100%; /* Largura total */
+  box-sizing: border-box; /* Calcula a largura incluindo padding e bordas */
+  display: flex; /* Usa o modelo de layout flexível */
+  justify-content: space-between; /* Alinha os itens horizontalmente com espaço entre eles */
+  align-items: center; /* Alinha os itens verticalmente ao centro */
+  gap: 2.5rem; /* Espaçamento entre os elementos */
+  padding-top: 16px; /* Espaçamento superior */
+  padding-bottom: 2.5rem; /* Espaçamento inferior */
+}
+
+/* Define o estilo do cabeçalho durante a pesquisa */
+.search .header {
+  gap: 8px; /* Espaçamento maior entre os elementos */
+}
+
+.search .header__logo {
+  display: none; /* Esconde o logo durante a pesquisa */
+}
+
+.header__input {
+  display: none; /* Esconde a entrada de texto no cabeçalho */
+}
+
+#header__mobile-input {
+  display: none; /* Esconde a entrada de texto no modo mobile */
+}
+
+/* Define o estilo do ícone de menu no modo mobile */
+.search #header__mobile-input {
+  display: flex; /* Exibe a entrada de texto no modo mobile */
+  align-items: center; /* Alinha os itens verticalmente ao centro */
+  justify-content: flex-end; /* Alinha os itens horizontalmente à direita */
+  height: 55px; /* Altura da entrada de texto */
+  width: 100%; /* Largura total */
+}
+
+#menu__mobile {
+  display: flex; /* Exibe o menu mobile */
+  justify-content: flex-end; /* Alinha os itens do menu à direita */
+  gap: 0.5rem; /* Espaçamento entre os itens do menu */
+}
+
+/* Define o estilo do usuário */
+.user {
+  color: white; /* Cor do texto */
+  cursor: pointer; /* Cursor do mouse como ponteiro */
+}
+
+/* Define o estilo dos elementos de pesquisa, menu e fechar pesquisa */
+.header__search,
+.header__menu,
+.search__close {
+  padding: 0.75rem; /* Preenchimento interno */
+  border: none; /* Sem borda */
+  border-radius: 16px; /* Raio da borda */
+  background: none; /* Fundo transparente */
+  cursor: pointer; /* Cursor do mouse como ponteiro */
+  width: 48px; /* Largura */
+  height: 48px; /* Altura */
+}
+
+/* Estilos de interação para os elementos de pesquisa, menu e fechar pesquisa */
+.header__search:hover,
+.header__menu:hover,
+.search__close:hover {
+  background: var(--botao-highlight); /* Cor de destaque ao passar o mouse */
+}
+
+.header__search:active,
+.header__menu:active,
+.search__close:active {
+  background: var(--botao-active); /* Cor ativa ao clicar */
+}
+
+/* Esconde o menu no modo de pesquisa */
+.search .header__menu {
+  display: none;
+}
+
+/* Define os ícones de pesquisa e fechar pesquisa */
+#search-icon {
+  content: url('../Images/search_button.svg'); /* Ícone de pesquisa */
+}
+
+.search #search-icon {
+  content: url('../Images/close_icon.svg'); /* Ícone de fechar pesquisa */
+}
+
+/* Define o estilo do usuário */
+.header__user {
+  display: none; /* Esconde o usuário */
+}
+
+/* Define o ícone do menu */
+#menu-icon {
+  display: flex; /* Exibe o ícone do menu */
+  height: 24px; /* Altura do ícone do menu */
+  width: 24px; /* Largura do ícone do menu */
+  content: url('../Images/menu_hamburguer.svg'); /* Ícone do menu */
+}
+
+/* Define o ícone do menu aberto */
+.open #menu-icon {
+  display: flex; /* Exibe o ícone do menu aberto */
+  content: url('../Images/close_icon.svg'); /* Ícone do menu aberto */
+}
+
+/* Estilos para telas maiores que 768px */
+@media screen and (min-width: 768px) {
+  .header {
+    padding-top: 2rem; /* Espaçamento superior aumentado */
+  }
+  
+  .header__mobile {
+    display: none; /* Esconde o cabeçalho mobile */
+  }
+  
+  .header__input {
+    width: 100%; /* Largura total */
+    width: 752px; /* Largura fixa */
+    display: flex; /* Exibe a entrada de texto */
+    justify-content: center; /* Alinha os itens horizontalmente ao centro */
+    position: relative; /* Posição relativa */
+    box-sizing: border-box; /* Calcula a largura incluindo padding e bordas */
+    outline: none; /* Sem contorno ao focar */
+  }
+  
+  .header__input:hover {
+    background: rgba(255, 255, 255, 0.24); /* Cor de destaque ao passar o mouse */
+    transition: 0.3s; /* Transição suave */
+  }
+  
+  .header__search {
+    display: none; /* Esconde o ícone de pesquisa */
+  }
+}
+
+/* Estilos para telas maiores que 1440px */
+@media screen and (min-width: 1440px) {
+  #menu__mobile {
+    display: none; /* Esconde o menu mobile */
+  }
+  
+  .header__menu {
+    display: none; /* Esconde o menu */
+  }
+  
+  .header__user {
+    display: flex; /* Exibe o usuário */
+    justify-content: right; /* Alinha os itens horizontalmente à direita */
+    align-items: center; /* Alinha os itens verticalmente ao centro */
+    gap: 0.5rem; /* Espaçamento entre os itens */
+    padding: 12px; /* Preenchimento */
+    background: none; /* Fundo transparente */
+    border: none; /* Sem borda */
+    border-radius: 8px; /* Raio da borda */
+    font-size: 2rem; /* Tamanho da fonte */
+    color: white; /* Cor do texto */
+    cursor: pointer; /* Cursor do mouse como ponteiro */
+  }
+  
+  .header__user:hover {
+    background: var(--user-hover); /* Cor de destaque ao passar o mouse */
+  }
+  
+  .header__user--name {
+    font-size: 1rem; /* Tamanho da fonte */
+    font-weight: normal; /* Peso da fonte */
+    line-height: 24px; /* Altura da linha */
+    color: white; /* Cor do texto */
+  }
+  
+  .header__input {
+    position: absolute; /* Posição absoluta */
+    left: 0; /* Alinhamento à esquerda */
+    right: 0; /* Alinhamento à direita */
+    margin-left: auto; /* Margem esquerda automática */
+    margin-right: auto; /* Margem direita automática */
+    width: 752px; /* Largura fixa */
+  }
+}

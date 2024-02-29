@@ -1,0 +1,89 @@
+.editor {
+  background-color: var(--azul-escuro); /* Define a cor de fundo */
+
+  height: fit-content; /* Ajusta a altura automaticamente conforme o conteúdo */
+}
+
+.editor__box {
+  padding: 2rem; /* Adiciona preenchimento interno */
+
+  border-radius: 8px; /* Define o raio da borda */
+
+  box-sizing: border-box; /* Define a caixa de modelagem incluindo preenchimento e borda */
+}
+
+.mode__toggle {
+  visibility: hidden; /* Inicialmente esconde o elemento de alternância de modo */
+}
+
+.mode__toggle.mode {
+  visibility: visible; /* Torna visível quando a classe "mode" está presente */
+  float: right; /* Alinha à direita */
+  padding: 0; /* Remove o preenchimento */
+  border: none; /* Remove a borda */
+  background: none; /* Remove o fundo */
+  cursor: pointer; /* Define o cursor como ponteiro */
+}
+
+.editor__border {
+  padding: 1rem; /* Adiciona preenchimento interno */
+
+  border-radius: 8px; /* Define o raio da borda */
+
+  background: #0c1118; /* Define a cor de fundo */
+  color: #afaba2; /* Define a cor do texto */
+}
+
+.editor__code {
+  outline: none; /* Remove a borda de contorno ao focar */
+  min-height: 15rem; /* Define a altura mínima */
+  padding-top: 1.5rem; /* Adiciona preenchimento superior */
+  font-family: var(--roboto); /* Define a família da fonte */
+  font-size: 0.875rem; /* Define o tamanho da fonte */
+  font-weight: normal; /* Define o peso da fonte */
+  text-align: center; /* Alinha o texto ao centro */
+  line-height: 1.3rem; /* Define a altura da linha */
+  overflow: hidden; /* Oculta o conteúdo que extrapola o contêiner */
+  white-space: pre-line; /* Preserva quebras de linha */
+}
+
+.editor__button {
+  width: 100%; /* Define a largura total */
+
+  display: flex; /* Permite layout flexível */
+  justify-content: center; /* Alinha ao centro horizontalmente */
+  margin-top: 2rem; /* Adiciona margem superior */
+  margin-right: auto; /* Alinha à direita */
+  margin-left: auto; /* Alinha à esquerda */
+
+  box-sizing: border-box; /* Define a caixa de modelagem incluindo preenchimento e borda */
+
+  background: var(--botao-highlight); /* Define o fundo */
+  color: white; /* Define a cor do texto */
+  font-size: 1rem; /* Define o tamanho da fonte */
+  font-weight: normal; /* Define o peso da fonte */
+  line-height: 24px; /* Define a altura da linha */
+}
+
+.editor__button:hover {
+  background: var(--botao-active); /* Define o fundo ao passar o mouse */
+  transition: 0.3s; /* Adiciona transição suave */
+}
+
+.editor__button:active {
+  background: var(--botao-active); /* Define o fundo ao clicar */
+  border: 4px solid rgba(80, 129, 251, 0.24); /* Adiciona uma borda ao clicar */
+}
+
+@media screen and (min-width: 1440px) {
+  .editor {
+    display: grid; /* Define um layout de grade */
+    grid-auto-flow: column; /* Define a direção automática da grade como coluna */
+    justify-content: space-between; /* Distribui o espaço entre os elementos */
+  }
+
+  .editor__box {
+    position: relative; /* Define a posição como relativa */
+    width: 752px; /* Define a largura fixa */
+  }
+}

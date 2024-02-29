@@ -1,0 +1,75 @@
+/* Define o estilo padrão para o menu à esquerda e para os cards do menu */
+.left__menu,
+.left__menu--card {
+  display: none; /* Esconde o menu à esquerda e os cards por padrão */
+}
+
+/* Define os estilos para telas maiores que 1440px */
+@media screen and (min-width: 1440px) {
+  /* Define o estilo da seção da comunidade */
+  .community {
+    display: flex; /* Exibe a comunidade como um flex container */
+    flex-direction: row; /* Direção da flexbox como linha */
+    align-items: flex-start; /* Alinha os itens flexíveis ao início */
+    gap: 3rem; /* Espaçamento entre os elementos */
+  }
+
+  /* Define os estilos para o menu à esquerda e os cards */
+  .left__menu,
+  .left__menu--card {
+    display: flex; /* Exibe o menu à esquerda e os cards como flex container */
+    flex-direction: column; /* Direção da flexbox como coluna */
+    width: 17rem; /* Largura fixa */
+    padding-left: 0; /* Preenchimento à esquerda */
+    background-color: var(--azul-escuro); /* Cor de fundo */
+  }
+
+  /* Define os estilos da lista do menu à esquerda */
+  .left__menu--list {
+    padding-top: 1rem; /* Espaçamento superior */
+  }
+
+  /* Define os estilos para os links no menu à esquerda */
+  .left__menu--list a {
+    color: white; /* Cor do texto */
+    font-size: 1rem; /* Tamanho da fonte */
+    font-weight: normal; /* Peso da fonte */
+    line-height: 24px; /* Altura da linha */
+  }
+
+  /* Define os estilos para as imagens na lista do menu à esquerda */
+  .left__menu--list img {
+    vertical-align: middle; /* Alinha verticalmente ao centro */
+    padding-right: 1rem; /* Espaçamento à direita */
+  }
+
+  /* Define novamente os estilos da lista do menu à esquerda */
+  .left__menu--list {
+    padding-top: 1rem; /* Espaçamento superior */
+  }
+
+  /* Define os estilos de hover para o ícone da comunidade */
+  .community__icon:hover {
+    display: block; /* Exibe o ícone */
+    background-image: url(../Images/community_icon_hover.svg); /* Imagem de fundo ao passar o mouse */
+    background-repeat: no-repeat; /* Não repete a imagem de fundo */
+  }
+
+  /* Define os estilos de hover para o ícone do editor */
+  .editor__icon:hover {
+    display: block; /* Exibe o ícone */
+    background-image: url(../Images/editor_icon_hover.svg); /* Imagem de fundo ao passar o mouse */
+    background-repeat: no-repeat; /* Não repete a imagem de fundo */
+  }
+
+  /* Define os estilos para as etiquetas dos projetos */
+  .project__label {
+    display: inline; /* Exibe as etiquetas inline */
+    font-size: 0.75rem; /* Tamanho da fonte */
+    font-weight: normal; /* Peso da fonte */
+    line-height: 18px; /* Altura da linha */
+    letter-spacing: 0.4em; /* Espaçamento entre letras */
+    text-transform: uppercase; /* Transforma o texto em maiúsculas */
+    color: white; /* Cor do texto */
+  }
+}

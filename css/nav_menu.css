@@ -1,0 +1,87 @@
+.nav {
+  position: absolute; /* Define a posição absoluta */
+  top: 88px; /* Define a distância do topo */
+  right: 0; /* Define a distância da direita */
+
+  width: 254px; /* Define a largura */
+  height: 571px; /* Define a altura */
+
+  border-radius: 8px; /* Define o raio da borda */
+
+  background: var(--menu-mobile); /* Define o fundo */
+
+  visibility: hidden; /* Inicialmente esconde o elemento */
+}
+
+.open .nav {
+  visibility: visible; /* Torna o elemento visível quando a classe 'open' é aplicada */
+}
+
+.nav__ul {
+  font-size: 16px; /* Define o tamanho da fonte */
+  line-height: 24px; /* Define a altura da linha */
+
+  padding: 1.5rem; /* Adiciona preenchimento interno */
+}
+
+.editor__nav {
+  padding-bottom: 1rem; /* Adiciona espaço abaixo do elemento */
+}
+
+.sliding__list a {
+  color: white; /* Define a cor do texto */
+  text-decoration: none; /* Remove a decoração do texto */
+}
+
+.sliding__list img {
+  vertical-align: middle; /* Alinha verticalmente a imagem */
+  padding-right: 1rem; /* Adiciona espaço à direita da imagem */
+}
+
+.community__icon:hover {
+  display: block; /* Exibe o elemento quando em estado de hover */
+  background-image: url(../Images/community_icon_hover.svg); /* Define a imagem de fundo no hover */
+  background-repeat: no-repeat; /* Evita a repetição da imagem de fundo */
+}
+
+hr {
+  margin: 0 24px; /* Define as margens horizontalmente */
+  border: 1px solid var(--linha); /* Define a borda com base na variável de cor */
+  opacity: 0.08; /* Define a opacidade */
+}
+
+.user {
+  display: flex; /* Define o elemento como flexível */
+  align-items: center; /* Alinha os itens verticalmente */
+
+  width: fit-content; /* Ajusta a largura conforme o conteúdo */
+  gap: 0.5rem; /* Define o espaço entre os itens */
+
+  padding: 12px; /* Adiciona preenchimento interno */
+  margin-top: 24px; /* Define a margem superior */
+  margin-left: 24px; /* Define a margem esquerda */
+
+  border-radius: 8px; /* Define o raio da borda */
+
+  font-size: 16px; /* Define o tamanho da fonte */
+  line-height: 24px; /* Define a altura da linha */
+  color: white; /* Define a cor do texto */
+}
+
+.user:hover {
+  background: var(--user-hover); /* Define o fundo ao passar o mouse */
+}
+
+@media screen and (min-width: 768px) {
+  .nav {
+    height: 912px; /* Ajusta a altura em telas maiores */
+    top: 112px; /* Ajusta a distância do topo em telas maiores */
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .nav {
+    display: none; /* Oculta o elemento em telas maiores */
+  }
+}
+
