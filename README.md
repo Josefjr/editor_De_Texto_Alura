@@ -38,8 +38,7 @@ O projeto está estruturado da seguinte forma:
 5. Envie um pull request.
 
 
-Este projeto foi desenvolvido por [José Luis Jr](www.linkedin.com/in/josé-luís-da-silva-junior-5b0860182) como parte do desafio AluraDEV.
-
+Este projeto foi desenvolvido por [José Luís da Silva Júnior](https://www.linkedin.com/in/jos%C3%A9-lu%C3%ADs-da-silva-junior-5b0860182/)
 ## Licença
 
 Este projeto está sob a licença [MIT](https://opensource.org/licenses/MIT).
